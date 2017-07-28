@@ -1,0 +1,1 @@
+psql -h prod-pdbr1.maponics.local -d prime -U dfollensbee -c "\copy (SELECT * FROM workflow_tables.prime_projects) to 'c:\users\DE013FO\Desktop\plop.txt' with delimiter ',' CSV HEADER"
