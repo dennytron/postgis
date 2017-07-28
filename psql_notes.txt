@@ -1,5 +1,5 @@
 COPY TO
-psql -h *HOST* -d *DB* -U *USER* -c "\COPY (SELECT * FROM public.stuff) TO 'c:\plop.txt' with delimiter ',' CSV HEADER"
+psql -h *HOST* -d *DB* -U *USER* -c "\COPY (SELECT * FROM public.stuff) TO 'c:\plop.txt' with delimiter ',' CSV HEADER;"
 
 COPY FROM
 psql -h *HOST* -d *DB* -U *USER* -c "\COPY denny.plop FROM 'c:\plop.txt' with delimiter ',' CSV HEADER;"
