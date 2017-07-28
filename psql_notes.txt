@@ -1,1 +1,7 @@
-psql -h prod-pdbr1.maponics.local -d prime -U dfollensbee -c "\copy (SELECT * FROM workflow_tables.prime_projects) to 'c:\users\DE013FO\Desktop\plop.txt' with delimiter ',' CSV HEADER"
+Copy Command 
+
+COPY TO
+psql -h *HOST* -d *DB* -U *USER* -c "\COPY (SELECT * FROM public.stuff) TO 'c:\plop.txt' with delimiter ',' CSV HEADER"
+
+COPY FROM
+psql -h *HOST* -d *DB* -U *USER* -c "\COPY denny.plop FROM 'c:\plop.txt' with delimiter ',' CSV HEADER;"
