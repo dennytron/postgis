@@ -1,5 +1,3 @@
-Copy Command 
-
 COPY TO
 psql -h *HOST* -d *DB* -U *USER* -c "\COPY (SELECT * FROM public.stuff) TO 'c:\plop.txt' with delimiter ',' CSV HEADER"
 
