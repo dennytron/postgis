@@ -1,0 +1,3 @@
+pg_dump --host hostname --port 5432 --username "dfollensbee" --no-password --format plain --no-owner --section pre-data --section post-data --no-privileges --no-tablespaces --verbose --no-unlogged-table-data --file "qc.sql" --schema "someschema" "dbname"
+
+psql --quiet -h hostname -d dbname -U dfollensbee -f "qc.sql"
