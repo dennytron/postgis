@@ -1,12 +1,11 @@
 DO $$
     -- explodes multipolygons into a table of rings
     DECLARE
-        ring RECORD;
-        ring_path INTEGER;
-
+        ring       RECORD;
+        ring_path  INTEGER;
         geom_input GEOMETRY;        
-        ring_geom GEOMETRY;
-        part GEOMETRY;
+        ring_geom  GEOMETRY;
+        part       GEOMETRY;
     BEGIN
         DROP TABLE IF EXISTS public.rings;
         CREATE TABLE public.rings(ring GEOMETRY, kind TEXT);
