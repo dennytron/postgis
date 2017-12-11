@@ -4,5 +4,5 @@ pg_dump --host hostname --port 5432 --username "dfollensbee" --no-password --for
 psql --quiet -h hostname -d dbname -U dfollensbee -f "qc.sql"
 
 # custom format
-pg_dump.exe --host somehost --port 5432 --username "someuser" --no-password --format custom --no-owner --no-privileges --no-tablespaces --verbose --no-unlogged-table-data --file "d.dump" --schema "someschema" "somedb"
+pg_dump --host somehost --port 5432 --username "someuser" --no-password --format custom --no-owner --no-privileges --no-tablespaces --verbose --no-unlogged-table-data --file "d.dump" --schema "someschema" "somedb"
 pg_restore --no-privileges --no-owner -j 8 --no-acl -h somehost -U someuser --exit-on-error --dbname "somedb" "d.dump"
